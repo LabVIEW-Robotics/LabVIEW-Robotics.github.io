@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /myrio/
 links:
 -
   url: http://www.ni.com/myrio/
