@@ -93,10 +93,10 @@
 <div class="sidebar-module">
 {% if page.links %}
 <h4>Helpful Links</h4>
-<ol>
+<ol class="list-unstyled">
 {% for link in page.links %}
 <li>
-<a href="link['url']">link['name']</a>
+<a href="{{ link['url'] }}">{{ link['name'] }}</a>
 </li>
 {% endfor %}
 </ol>
