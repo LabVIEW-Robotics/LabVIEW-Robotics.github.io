@@ -23,26 +23,70 @@ such a robot. The items you will need are listed below:</p>
 <li><a href="https://www.sparkfun.com/products/11476">5.5mm/2.1mm DC Barrel Jack Connector</a>
 <li>Breadboarding Wire</li>
 </ul>
+Make sure you have went through all the setup steps in the previous tutorials 
+especially the parts pertaining to installing the modules, as the VI will not compile 
+without all the neccessary modules. The modules you will need are listed below:
+<ul>
+<li>NI Vision</li>
+<li>myRIO Software Suite</li>
+<li>iRobot Create Package</li>
+</ul>
+You also need to make sure you have installed the IMAQ drivers onto the myRIO to be 
+able to use a USB webcam.
 </p>
 <h2 class="blog-post-title">Hardware Setup</h2>
 <p>The 25 pin male soderable cup will be used as an interface between the iRobot create and 
 the myRIO; it will also be used to provide power to the myRIO. The pins are shown below. 
 <p>
-<img src="/images/irobot_pins.png"/>
+<img style="max-width:100%;" src="/images/irobot_pins.png"/>
 </p>
-To set up these connections:
+To set up the connections between the 25 pin connector and the myRIO follow the steps below:
 <ol>
-<li>Solder two inch length red wires onto pins 10, 11, and 12; connect all three of these 
-wires to the DC barrel jack hot(red) wire. Solder the ground(black) wire from the DC barrel 
-jack to pin 25 of the 25 pin male soderable cup. The barrel jack connection, shown below, when 
-plugged into the iRobot create will be used to power the myRIO. 
+<li>First we will set up the power connection. Solder two inch length red wires onto pins 
+10, 11, and 12; connect all three of these wires to the DC barrel jack hot(red) wire. 
+Solder the ground(black) wire from the DC barrel jack to pin 25 of the 25 pin male 
+soderable cup. The barrel jack connection, shown below, when plugged into the iRobot 
+create will be used to power the myRIO. 
 <p>
-<img src="/images/power_connection.PNG" />
+<img style="max-width: 100%;" src="/images/power_connection.jpg" />
+<img style="max-wdith: 100%;" src="/images/power_connection_close.jpg" />
 </p>
 </li>
 <li>
-
+Next we will set up the connections for communication between the myRIO and the Create. 
+This will require four wires of approximately twelve inches in length 
+used for the Rx, Tx, power, and ground lines of a 
+<a href="http://en.wikipedia.org/wiki/Serial_communication">serial</a> connection. 
+These four wires will need to be soldered to the pins 1, 2, 8, and 15 of the 25 pin 
+connector. 
+</li>
+<li>
+Take the 25 pin connector and plug it into the cargo bay of the iRobot create.
+<p>
+<img style="max-width:100%;" src="/images/irobot_bay.jpg" />
+</p>
+</li>
+<li>
+The myRIO kit comes with an expansion port breakout board. We will use this to 
+make the serial connection. Plug in the expansion port breakout and make the following 
+connections:<br>
+1 -> Tx<br>
+2 -> Rx<br>
+8 -> 5V<br>
+14 -> GND<br>
+<p>
+<img style="max-width: 100%;" src="/images/myrio_serial.jpg" />
+</p>
+</li>
+<li>
+Plug the USB camera into the USB port on the myRIO.
+</li>
+<li>
+Finally, plug the barrel jack connector into the power jack on the myRIO.
 </li>
 </ol>
+<p>
+<img style="max-width: 100%;" src="/images/full_system.jpg" />
+</p>
 </p>
 
