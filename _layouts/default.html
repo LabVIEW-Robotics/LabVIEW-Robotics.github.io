@@ -91,7 +91,16 @@
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           
 <div class="sidebar-module">
-
+{% if page.links %}
+<h4>Helpful Links</h4>
+<ol>
+{% for link in page.links %}
+<li>
+<a href="link[url]">link[name]</a>
+</li>
+{% endfor %}
+</ol>
+{% endif %}
 </div>
 </div><!-- /.blog-sidebar -->
 
