@@ -140,5 +140,10 @@ turns the robot left or right.
 </p>
 <p>
 As shown in the block diagram, there are three control loops running in 
-parallel. 
+parallel. One loop to take the speed and direction input and convert it 
+into speeds for the left and right wheel saving the values to a local variable. 
+Another loop to read the left wheel and right wheel variables and 
+execute a locomotion command to the iRobot Create. The third loop 
+displays a live feed of the camera. Each loop has a seperate stop 
+control button.
 </p>
