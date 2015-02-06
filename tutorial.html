@@ -126,3 +126,19 @@ from the robot. The speed and direction sliders should make the robot move.
 </li>
 </ol>
 </p>
+<h2 class="blog-post-title">Block Diagram Explanation</h2>
+<p>
+The VI block diagram consists of four inputs from the front panel, the 
+camera session, VISA resource name, speed, and direction. The camera session selects 
+which camera on the myRIO to communicate with, the VISA resource 
+name selects which serial port on the myRIO to use, the speed determines 
+how fast forward or backward the robot should drive, and direction 
+turns the robot left or right. 
+</p>
+<p>
+<img style="max-width:100%;" src="/images/vi_block_diagram.PNG" />
+</p>
+<p>
+As shown in the block diagram, there are three control loops running in 
+parallel. 
+</p>
