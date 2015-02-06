@@ -89,4 +89,40 @@ Finally, plug the barrel jack connector into the power jack on the myRIO.
 <img style="max-width: 100%;" src="/images/full_system.jpg" />
 </p>
 </p>
-
+<h2 class="blog-post-title">Software</h2>
+<p>The robot system sends camera images over wifi to a LabVIEW front end 
+running on a laptop. The front end also has sliders to control the speed 
+and direction of the robot. The VI itself is compiled and ran on the myRIO. 
+Befor getting started, make sure the myRIO is being powered by the 
+iRobot Create and is connected to wifi. The steps below are used to 
+setup the software portion of the tutorial:</p>
+<p>
+<ol>
+<li>Open LabVIEW and select Create new project. Using the create project 
+wizard, create a new myRIO project.
+<p>
+<img style="max-width:100%;" src="/images/myrio_project.png" />
+</p>
+Open NI Max and find the IP address of the myRIO. Enter this IP address 
+into the project wizard for the specific IP address or hostname. Finish 
+the project creation wizard.
+</li>
+<li>
+Download the "create_control" VI <a href="/create_control.vi">here</a>. 
+In the project view right click the myRIO and select add -> file. 
+Navigate to the downloaded VI and add it to the project.
+</li>
+<li>
+Open the VI. Under the "Session In" dropdown select the camera which should 
+be labeled cam1 or cam0. Under the "VISA resource name" dropdown select 
+ASLR1.
+<p>
+<img style="max-width:100%;" src="/images/create_control_vi.png" />
+</p>
+</li>
+<li>
+Select the run button on the front panel and you should see the video feed 
+from the robot. The speed and direction sliders should make the robot move.
+</li>
+</ol>
+</p>
