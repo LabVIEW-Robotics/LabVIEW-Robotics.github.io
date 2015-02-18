@@ -48,7 +48,7 @@ which initializes the camera. The session is then passed to the Initialize Grab 
 to take a picture. Then we enter the loop where the camera takes a picture 
 <span><img src="/images/grab_image.PNG"/></span> every 50 milliseconds and sends 
 it to the display. When the loop is stopped, the camera connection is closed <span><img src="/images/close_connection.PNG"/></span>.</p>
-<h2 class="blog-post-title">That Was the Hard Way!</h2>
+<h2 class="blog-post-title">An Easier Way!</h2>
 <p>With LabVIEW, express VIs are your friend. For vision aquisition, LabVIEW offers 
 a very nice express VI. The steps for using this express VI are detailed below:</p>
 <p>
@@ -87,6 +87,28 @@ this tutorial we will just select Finish.
 <li>
 Your block diagram should now be set up for vision aquisition.
 <img src="/images/vision_express_block_diagram.PNG" style="max-width:100%;" />
+</li>
+</ol>
+</p>
+<h2 class="blog-post-title">Color Tracking - Vision Assistant</h2>
+<p>
+LabVIEW also offers a Vision Assistant VI, it is a very powerful tool. The 
+steps for setting up a color tracker using the Vision Assistant VI are listed 
+below. 
+<ol>
+<li>
+Start with the VI created in the previsious section.
+</li>
+<li>
+Right click the block diagram and select "Vision and Motion" -> "Vision Express" -> 
+"Vision Assistant". 
+</li>
+<li>
+Drop the Vision Assistant express VI onto the block diagram.
+</li>
+<li>
+The Vision Assistant window should open.
+<img src="/images/vision_assistant_window.PNG" style="max-width:100%;" />
 </li>
 </ol>
 </p>
