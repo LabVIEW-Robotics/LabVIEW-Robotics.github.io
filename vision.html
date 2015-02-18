@@ -45,3 +45,44 @@ which initializes the camera. The session is then passed to the Initialize Grab 
 to take a picture. Then we enter the loop where the camera takes a picture 
 <span><img src="/images/grab_image.PNG"/></span> every 50 milliseconds and sends 
 it to the display. When the loop is stopped, the camera connection is closed <span><img src="/images/close_connection.PNG"/></span>.</p>
+<h2 class="blog-post-title">That Was the Hard Way!</h2>
+<p>With LabVIEW, express VIs are your friend. For vision aquisition, LabVIEW offers 
+a very nice express VI. The steps for using this express VI are detailed below:</p>
+<p>
+<ol>
+<li>Create a new VI</li>
+<li>In the block diagram window, right click and under Vision and Motion, 
+choose Vision Express, then Vision Aquisition. 
+<img style="max-width:100%;" src="/images/vision_express.PNG" />
+</li>
+<li>
+Drop the Vision Aquisition express VI in the block diagram.
+</li>
+<li>
+A Vision Aquisition pop-up window should appear to guide you through 
+setting up the vision VI.
+<img src="/images/vision_aquisition_window.PNG" style="max-width:100%;" />
+</li>
+<li>
+You should have at least one selection under NI-IMAQdx Devices. If not then 
+you need to go back and install the IMAQ drivers. Select the device and 
+press the play button to test your device.
+</li>
+<li>
+Select the Next button.
+</li>
+<li>
+The next window allows you to choose between aquiring a single image, or multiple images. 
+For this tutorial we will choose Continuous Aquisition with Inline Processing.
+<img src="/images/vision_continuous.PNG" style="max-width:100%;" />
+</li>
+<li>
+From here we could change some of the properties of our Vision Aquisition, but for 
+this tutorial we will just select Finish.
+</li>
+<li>
+Your block diagram should now be set up for vision aquisition.
+<img src="/images/vision_express_block_diagram.PNG" style="max-width:100%;" />
+</li>
+</ol>
+</p>
