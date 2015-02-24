@@ -22,8 +22,26 @@ block diagram functions.</p>
 <p>
 <img src="/images/data_communication.PNG" />
 </p>
+<p>
+A tutorial on using the TCP protocol in LabVIEW can be found on 
+the National Instruments website 
+<a href="http://www.ni.com/white-paper/2710/en/">here</a>. Similarly an 
+tutorial using UDP can be found <a href="http://www.ni.com/tutorial/4950/en/">here</a>.
+</p>
 <h3>What is the difference between running the VI on the host machine and the myRIO?</h3>
-<p></p>
+<p>Running a VI on the myRIO gives the VI access to the myRIO's ports. While running 
+it on the host machine will give it access to the host machine ports. For example, 
+if you want to read from a camera connected to the USB port on the myRIO 
+you would want to run the VI on the myRIO. If the USB camera is connected to 
+a USB port on the host machine then you would want to run it on the host machine.
+</p>
+<p>
+Specifying if the VI will run on the host machine or the myRIO is done 
+in the project view window. Right click on the target and select new -> VI. 
+For more information you can also watch the instructional videos 
+<a href="http://www.ni.com/academic/students/learn-rio/embedded-programming/">here</a>. 
+While these videos were made for the cRIO they are also applicable to the myRIO.
+</p>
 <h3>How does a VI on the host machine talk to a VI on the myRIO?</h3>
 <p></p>
 <h3>How do I remove the lag from the camera output?</h3>
