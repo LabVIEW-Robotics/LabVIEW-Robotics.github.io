@@ -122,6 +122,23 @@ The Perceptual Schema includes:
 </p>
 <p>
 The program makes use of many global variables. These variables are 
-shown below:
+shown below and can be found in the global_varibles.vi file:
 </p>
 <p><img src="/images/lobster-casting/global_variables_vi.PNG" style="max-width:100%;" /></p>
+<p>
+The variables on the left are used internally by the 
+program and should not be changed. The variables on the 
+right are input paramaters to the program. These can and 
+should be adjusted as the IR threshold will change depending 
+on the lighting of the room.
+</p>
+<p>
+The program starts in lobster_casting.vi, the rest of the VIs are used 
+as sub VIs. The lobster_casting.vi takes as input the UART port from 
+the myRIO that the iRobot is connected to. In our case it will be 
+ALSR1. As output we see if the robot has found food and a general 
+status as well as any errors. The VI block diagram is shown below:
+</p>
+<p>
+<img src="/images/lobster-casting/lobster_casting_vi.PNG" style="max-width:100%;" />
+</p>
