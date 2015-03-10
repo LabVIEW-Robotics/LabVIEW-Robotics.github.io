@@ -17,6 +17,9 @@ links:
 -
   url: http://zone.ni.com/reference/en-XX/help/372916L-01/nivisionconcepts/lookup_tables/
   name: Lookup Tables
+-
+  url: http://www.ni.com/white-paper/3470/en/
+  name: Image Analysis and Processing
 ---
 <h2>Vision Tutorial</h2>
 <h3>Histogram Equalization</h3>
@@ -36,6 +39,22 @@ Now that we have a grayscale image. We do the equalization. Under the Grayscale 
 Then choose Equalize for the Lookup Table Setup.
 <p>
 <img src="/images/vision-tutorial/equalize.PNG" style="max-width:100%;" />
+</p>
+</li>
+</ol>
+<h3>Noise Reduction</h3>
+<ol>
+<li>
+Make sure you have a grayscale image.
+</li>
+<li>
+Under the Grayscale tab select Filters.
+<p>
+<img src="/images/vision-tutorial/filters.PNG" style="max-width:100%;" />
+</p>
+The choose the type of filter you want to apply. For this tutorial we will choose Smoothing - Low Pass.
+<p>
+<img src="/images/vision-tutorial/smoothing_low_pass.PNG" style="max-width:100%;" />
 </p>
 </li>
 </ol>
