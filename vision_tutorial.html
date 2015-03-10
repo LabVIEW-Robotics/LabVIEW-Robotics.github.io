@@ -12,10 +12,30 @@ links:
   url: http://sine.ni.com/psp/app/doc/p/id/psp-394/
   name: IMAQ Drivers
 -
-  url: http://www.youtube.com/watch?v=HdyzfuzJs-w
-  name: Robot Color Tracing
+  url: http://digital.ni.com/public.nsf/allkb/ADB1479F70580346862569E40066996A
+  name: Grayscale Conversion
 -
-  url: http://www.youtube.com/watch?v=U7P7pty6bnU
-  name: Rubix Cube Solver
+  url: http://zone.ni.com/reference/en-XX/help/372916L-01/nivisionconcepts/lookup_tables/
+  name: Lookup Tables
 ---
 <h2>Vision Tutorial</h2>
+<h3>Histogram Equalization</h3>
+<ol>
+<li>
+Convert the RGB 32 bit image to a binary 8 bit image. Do this by using the color plane extraction feature of Vision Assistant. Under the color tab, select Color Plane Extraction.
+<p>
+<img src="/images/vision-tutorial/color_plane_extraction.PNG" style="max-width:100%;" />
+</p>
+Then choose the plane to extract. For this tutorial we will chose the RGB - Red Plane.
+</li>
+<li>
+Now that we have a grayscale image. We do the equalization. Under the Grayscale tab, select Lookup Table.
+<p>
+<img src="/images/vision-tutorial/lookup_table.PNG" style="max-width:100%;" />
+</p>
+Then choose Equalize for the Lookup Table Setup.
+<p>
+<img src="/images/vision-tutorial/equalize.PNG" style="max-width:100%;" />
+</p>
+</li>
+</ol>
