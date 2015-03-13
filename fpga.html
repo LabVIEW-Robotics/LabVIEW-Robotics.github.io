@@ -1,0 +1,53 @@
+s---
+layout: default
+permalink: /fpga/
+links:
+-
+  url: http://ni.com/labview
+  name: NI Labview
+-
+  url: https://www.youtube.com/watch?v=PqxStfwjQoQ&list=PL085A358B79B37463
+  name: Basic Tutorials
+-
+  url: http://www.ni.com/getting-started/labview-basics/examples
+  name: Finding Examples
+-
+  url: http://www.ni.com/academic/students/learn-rio/embedded-programming/
+  name: NI FPGA Programming
+-
+  url: https://decibel.ni.com/content/docs/DOC-36270
+  name: Controlling Servo Example
+---
+<h2 class="blog-post-title">FPGA</h2>
+<p>To access pins on the myRIO you will need to use 
+the FPGA functionality. This page will show how to 
+access the FPGA functionality and give an example of 
+controlling a servo motor.</p>
+<h2 class="blog-post-title">Setting up the Project</h2>
+<p>When you have a myRIO project, if you don't have 
+a Chassis under the myRIO device, you can right click 
+on the myRIO device goto New -> Targets and Devices. 
+Expand the myRIO Chassis folder and select the Chassis.
+</p>
+<p><img src="/images/fpga/chassis.PNG" style="max-width:100%;" /></p>
+<p>You can now add a VI to the FPGA Target.</p>
+<h2 class="blog-post-title">Controlling a Servo Motor</h2>
+<p>An example from the NI community pages shows how 
+to set up Servo control using the myRIO FPGA functionality. 
+The example is found <a href="https://decibel.ni.com/content/docs/DOC-36270">here</a>. 
+I will elaborate on the example to help in setting it up.</p>
+<h2 class="blog-post-title">Hardware</h2>
+<p>The Servo is connected to Connector pins A DIO/0, 5V, and ground.</p>
+<p><img src="/images/fpga/servo_hardware.jpg" style="max-width:100%;" /></p>
+<p>The FPGA target is running a VI for pulse width modulation.</p>
+<p>
+<a href="/images/fpga/servo_fpga.PNG">
+<img src="/images/fpga/servo_fpga.PNG" style="max-width:100%;" />
+</a>
+</p>
+<p>The VI running on the myRIO target itself uses the FPGA 
+VI and passes in a uS for the pulse width</p>
+<p><a href="/images/fpga/servo_myrio.PNG">
+<img src="/images/fpga/servo_myrio.PNG" style="max-width:100%;" />
+</a></p>
+<p>You can download the project <a href="https://decibel.ni.com/content/servlet/JiveServlet/downloadBody/36270-102-3-69867/my%20Rio%20FPGA%20PWM.zip">here</a>.</p>
