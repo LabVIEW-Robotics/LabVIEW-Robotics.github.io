@@ -48,3 +48,26 @@ the Open function. It takes as input a cluster
 containing initilization variables, such as the 
 IP address of the drone on the network and 
 the maximum hover altitude.</p>
+<h2 class="blog-post-title">Control With myRIO</h2>
+<p>This section will show how to control 
+the AR Drone with the myRIO. The button on 
+the myRIO will control the takeoff and landing 
+for the drone. You can download the project <a href="/Drone.zip">here</a>. 
+Another important feature of this project 
+is the use of a deployable buildout of the 
+project. This is so that the VI can run without 
+a host computer.</p>
+<p>The Main VI for the project is shown below:</p>
+<p><a href="/images/drone/button_control_vi.PNG">
+<img src="/images/drone/button_control_vi.PNG" style="max-width:100%;" />
+</a></p>
+<p>There are several loops running in parallel. 
+The top loop simply makes the LED blink 
+so that we have indication the VI is running. 
+The next loop is the control loop, there could be 
+the situation where the wifi connection to the drone 
+has not been made when the VI starts. So the control 
+loop will try to connect over and over again 
+if this occurs. The third loop sets the takeoff 
+global variable which controls takeoff and 
+landing.</p>
