@@ -41,7 +41,11 @@ project can be downloaded <a href="/Sound.zip">here</a>.</p>
 named read_mic.vi. This VI reads audio from the 
 microphone and saves it to a shared variable. The 
 VI is shown below.</p>
-<p><img src="/images/fpga/read_mic_vi.PNG" style="max-width:100%;" /></p>
+<p>
+<a href="/images/fpga/read_mic_vi.PNG">
+<img src="/images/fpga/read_mic_vi.PNG" style="max-width:100%;" />
+</a>
+</p>
 <p>A Chassis has been added to the myRIO target. 
 Inside the Chassis is an FPGA Target. A FIFO 
 queue has been added as well. The FIFO queue 
@@ -52,7 +56,11 @@ a refresh rate and reads the audio data and
 writes the data to the left and right audio 
 out I/O ports. The fpga_library VI is shown 
 below.</p>
-<p><img src="/images/fpga/fpga_library_vi.PNG" style="max-width:100%;" /></p>
+<p>
+<a href="/images/fpga/fpga_library_vi.PNG">
+<img src="/images/fpga/fpga_library_vi.PNG" style="max-width:100%;" />
+</a>
+</p>
 <p>You will need to build the fpga_library FPGA 
 executable found under Build Specifications.</p>
 <p>The final VI executing on the myRIO 
@@ -60,7 +68,11 @@ reads the shared variable for the audio data
 converts it to usable data by the FPGA method. 
 Then multiplies the value by the volume. The 
 play_speaker VI is shown below.</p>
-<p><img src="/images/fpga/play_speaker_vi.PNG" style="max-width:100%;" /></p>
+<p>
+<a href="/images/fpga/play_speaker_vi.PNG">
+<img src="/images/fpga/play_speaker_vi.PNG" style="max-width:100%;" />
+</a>
+</p>
 <p>To execute the code run the play_speaker and 
 read_mic VIs.</p>
 <h2 class="blog-post-title">Controlling a Servo Motor</h2>
